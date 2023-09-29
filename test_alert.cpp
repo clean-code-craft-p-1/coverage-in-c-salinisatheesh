@@ -10,7 +10,6 @@ TEST(TypewiseAlert, InferBreachAsPerLimits) {
   ASSERT_EQ(inferBreach(25.0, 20.0, 30.0), NORMAL);
   ASSERT_EQ(inferBreach(35.0, 20.0, 30.0), NORMAL);
   ASSERT_EQ(inferBreach(40.0, 20.0, 30.0), TOO_HIGH);
-.
 }
 
 // Test cases for classifyTemperatureBreach function
@@ -18,7 +17,6 @@ TEST(TypewiseAlert, ClassifyTemperatureBreach) {
   ASSERT_EQ(classifyTemperatureBreach(PASSIVE_COOLING, 25.0), NORMAL);
   ASSERT_EQ(classifyTemperatureBreach(HI_ACTIVE_COOLING, 50.0), TOO_HIGH);
   ASSERT_EQ(classifyTemperatureBreach(MED_ACTIVE_COOLING, 35.0), NORMAL);
-  
 }
 
 // Test cases for checkAndAlert function
