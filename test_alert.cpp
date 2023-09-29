@@ -8,7 +8,6 @@
 TEST(TypewiseAlert, InferBreachAsPerLimits) {
   ASSERT_EQ(inferBreach(12.0, 20.0, 30.0), TOO_LOW);
   ASSERT_EQ(inferBreach(25.0, 20.0, 30.0), NORMAL);
-  ASSERT_EQ(inferBreach(35.0, 20.0, 30.0), NORMAL);
   ASSERT_EQ(inferBreach(40.0, 20.0, 30.0), TOO_HIGH);
 }
 
